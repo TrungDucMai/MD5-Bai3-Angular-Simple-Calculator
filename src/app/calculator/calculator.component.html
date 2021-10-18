@@ -1,0 +1,14 @@
+<div>
+  Nhap so thu nhat : <input type="number" [(ngModel)]="firstNumber">
+  <br>
+  Nhap so thu hai : <input type="number"  [(ngModel)]="secondNumber">
+</div>
+<div>
+  <select [(ngModel)]="op" >
+    <option *ngFor="let operator of operators" value="{{operator}}">{{operator}}</option>
+  </select>
+</div>
+<div>
+  <button type="submit" (click)="operating()">Result</button> :
+  <p [(ngModel)]="result">{{result}}</p>
+</div>
